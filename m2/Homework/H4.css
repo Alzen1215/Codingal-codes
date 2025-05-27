@@ -1,0 +1,76 @@
+
+
+body {
+    font-family: 'Arial' , 'sams-serif';
+    background-color: skyblue;
+    color: hsl(210, 17%, 82%);
+}
+
+h1 {
+    color: aqua;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color:green;
+}
+
+ul>li {
+    font-weight: bold;
+}
+
+h1+p {
+    background-color:black ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    color:darkgreen;
+}
+
+ul li:nth-child(3) {
+    background-color:black;
+}
+
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+ul li::before {
+    content: '🐐';
+}
+
+a::after {
+    content: '⚽';
+}
+
+p::first-letter {
+    font-size: 200%;
+    color:rgb(205, 255, 209);
+}
+
+b {
+    color: red;
+    text-decoration:underline;
+}
+
+hr {
+    color:black;
+}
+
+p {
+    color:black;
+}
+
+ol li:hover {
+    color: purple;
+}
+
+ol li:before {
+    content: "🧍‍♂️";
+}
