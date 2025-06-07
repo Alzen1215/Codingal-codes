@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>title>Bootstrap Example</title>
+    <head><title>Bootstrap Example</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -9,11 +9,72 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
 
 </script>
+
+<style>
+    hr {
+        width: 3px;
+        color: blueviolet;
+        background-color: blueviolet;
+    }
+
+    #mydiv {
+        background-color: darkolivegreen;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: blue;
+        
+    }
+</style>
 </head>
 
 <body>
     <div class="container">
+        <h1>Marks obtained by Students:</h1>
+        <p>The Results are based on the grade points:</p>
+
+        <div class="row">
+            <div class="col-md-8 col-xs-4" style="background-color: goldenrod; border: 2px solid black;">A+</div>
+            <div class="col-md-12 col-md-5" style="background-color: gray;">A</div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-6" style="background-color: greenyellow;">B+</div>
+            <div class="col-xs-6 col-xs-6 col-md-2" style="background-color: blueviolet;">B</div>
+        </div>
         
+        
+        </div>
     </div>
+    <div class="container">
+        <div class="row" style="background-color: brown;">
+            <div class="col-xs-6 col-lg-6">C</div>
+        </div>
+        
+        <div class="row" style="background-color:cyan;">
+            <div class="col-xs-8 col-md-6">C+</div>
+            <div class="col-xs-12"></div>
+        </div>
+    </div>
+      <br><br>
+    <div id="mydiv">Next</div>
+    <div id="mydiv">Part</div>
+
+    <br><br>
+
+         <h2>Number of girls and boys:</h2>
+         <p>The number of girls and boys are in the section below:</p>
+         <div class="row">
+            <div class="col-ig-8 col-md-12" style="background-color: mediumaquamarine;">
+                Girls
+            </div>
+            <div class="col-ig-9 col-md-8" style="background-color: yellowgreen;">
+                Boys
+            </div>
+         </div>
+
+    
 </body>
 </html>
