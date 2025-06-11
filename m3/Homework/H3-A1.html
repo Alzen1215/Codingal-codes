@@ -10,17 +10,34 @@
         <title>All About Universe</title>
 
         <style>
-            .hi-text {
-                font-size: 50px;
+            #hi-text {
+                font-size: 15px;
                 font-weight: bold;
                 color: skyblue;
+                box-shadow: 20px 20px 10px black;
+                text-shadow: 2px 2px 2px black;
             }
 
-            .he.text {
-                font-size: 20px;
-               box-shadow: 9px 9px 9px black;
+            #he-text {
+                font-size: 15px;
+               box-shadow: 20px 20px 11px black;
                 background-color: darkgreen;
+                text-shadow: 2px 2px 3px black;
                
+            }
+
+            #ho-text {
+                box-shadow: 20px 20px 11px black;
+                text-shadow: 2px 2px 2px black;
+            }
+
+            center {
+                font-size: 45px;
+                text-align: center;
+                text-shadow: 2px 2px 2px black;
+                text-decoration: underline;
+                background-color: blueviolet;
+                
             }
 
 
@@ -28,8 +45,10 @@
     </head>
 
     <body>
-        <center>All About Universe</center>
-          <div class="container bg-primary text-secondary">
+        <div class="container">
+        <center>All About Universe</center></div>
+        <br>
+          <div class="container bg-primary text-secondary" id="ho-text">
 
             <h2>What actually is Universe</h2>
 
@@ -45,13 +64,13 @@
 
           <br><br>
 
-          <div class="container bg-secondary hi-text">
+          <div class="container bg-secondary hi-text" id="ho-text">
             <h3>
                 How did the universe become biggger and bigger?
             </h3>
-          </div>
+          </div><br>
 
-          <div class=" container bg-success he-text">
+          <div class=" container bg-success he-text" id="ho-text">
             
             <p>According to modern science, the universe began about 13.8
             billion years ago with the Big Bang, a moment when space
@@ -60,8 +79,36 @@
             center, and possibly no end. Just galaxies upon galaxies, all dancing
              to the laws of physics.</p>
 
-          </div>
+          </div><br>
+          <div class="container border border-dark text-secondary" id="ho-text">
+            <h1>Types of Universe:</h1>
+          </div><br><br>
 
-          <div class="container"
+          <div class="container border border-dark bg-danger" id="hi-text">
+
+            <h2>Open Universe:</h2>
+            <p>Continues expanding forever as gravity isn't strong enough to slow it down.</p>
+            <p>When the avg density of the universe is greater tha its critical density it forms Open Universe.</p>
+          </div><br>
+
+          <div class="container border bg-success" id="he-text">
+
+            <h2>Closed Universe:</h2>
+            <p>Eventually collapses in a "Big Crunch" due to strong gravitational pull.</p>
+            <p>When the avg density of the universe is less than its critical density than it forms Closed Universe.</p>
+          </div><br>
+
+          <div class="container border bg-info" id="hi-text">
+
+            <h2>Flat Universe</h2>
+            <p>Expands at a steady rate due to a perfect balance between gravity and dark energy.</p>
+            <p>When the avg and critical density of the universe are both equal it forms Flat Universe.</p>
+          </div><br>
+
+          <div class="container border bg-warning" id="he-text">
+            
+            <h2> Multiverse Theory</h2>
+            <p>Suggests multiple universes exist with different physical laws and properties.</p>
+          </div><br>
     </body>
 </html>
