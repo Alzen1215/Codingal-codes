@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using JavaScript</title>
+    </head>
+
+    <body style="background-color: aquamarine;">
+        <h1 id="myID"></h1>
+        <p id="MyId"></p>
+
+        <script>
+            document.getElementById("myID").innerHTML="Using Javascript";
+
+            document.getElementById("MyId").innerHTML="Javascript is a renouned programming language.";
+
+        </script>
+        <h3>Sum of data:</h3>
+        <p id="result"></p>
+
+        <script>
+             var num1 = 10;
+             var num2 = 10;
+             var sum = num1 + num2;
+
+             document.getElementById("result").innerHTML = "The sum of 10 and 10 is : &nbsp " +sum;
+        </script>
+
+        <h3>Subtraction od data:</h3>
+        <p id="result3"></p>
+
+        <script>
+            var num5 = 30;
+            var num8 = 10;
+            var num21 = num5 - num8;
+
+            document.getElementById("result3").innerHTML = "The difference od 30 and 10 is " + num21;
+        </script>
+
+        <h3>Multiplication on data:</h3>
+        <p id="result1"></p>
+        <script>
+            var x, y, z;
+            x = 5;
+            y = 7;
+            z = x * y;
+            document.getElementById("result1").innerHTML = "The multiplication result of 5 and 7 is " + z + ".";
+        </script>
+       
+       <h3>Division on data:</h3>
+       <p id="result2"></p>
+       
+        <script>
+            var x, y, z;
+            x = 49;
+            y = 7;
+            z = x / y;
+            document.getElementById("result2").innerHTML = "The division result of 49 and 7 is " + z + ".";
+        </script>
+       
+    </body>
+</html>
