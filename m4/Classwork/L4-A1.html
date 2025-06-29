@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Javascript Objects and its Properties</h2>
+
+        <p>There are two different ways to sccess an object property</p>
+        <p>You can use .property or ["property"]</p>
+        <p id="demo12"></p>
+
+
+        <script>
+            var person = {
+                firstName: "Adam",
+                age: 10,
+                grade: 9,
+                school: "ABC"
+            };
+
+            document.getElementById("demo12").innerHTML = person.firstName +
+            " is" + person.age + "years old." + "<br>" + person.firstName + " studies in " + person.grade + "th grade." + "His school name is " + person.school;
+        </script>
+    </body>
+</html>
