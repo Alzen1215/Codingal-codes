@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript 2.0</title>
+    </head>
+<body>
+    <button onclick="myfunction(7)">Execute the code.</button>
+
+    <script>
+
+        function myfunction(x,y) {
+            if (y === undefined) {
+                y = 7
+            }
+            document.write(x*y);
+        }
+    </script>
+<br><br>
+   
+     <p id="demo1"></p>
+     <script>
+        var b = 5;
+       
+        var a = 5;
+        var z = b * a;
+        document.getElementById("demo1").innerHTML = "5 multiplied by 5 is " + z + ".";
+       
+     </script>
+
+
+<br><br>
+    <h3>What is todays date?</h3>
+    <p id="demo3"></p>
+
+    <script>
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thrusday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("demo3").innerHTML = "Today is " + day;w
+    </script>
+</body>
+</html>
