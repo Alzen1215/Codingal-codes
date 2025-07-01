@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Third website of JAVASCRIPT.</h2>
+        <p>Basic methods of Javascript:</p>
+        <p>No.1</p>
+        <script>
+            var str = "RoNaLdO";
+            document.write(str.toUpperCase());
+            document.write("<br><hr>")
+            document.write(str.toLowerCase());
+            document.write("<br><hr>");
+            document.write(str.startsWith('R'));
+            document.write("<br><hr>")
+
+            var str = "I am recently learning JavaScript.";
+            var patt = new RegExp("is doing");
+            var res = patt.test(str);
+            document.write<(res);
+
+        </script>
+
+        <p>No.2</p>
+        <script>
+            document.write("Vegetables: <br><br>")
+           var veges = [" Tomato", " Potato", " Greenleaves", " Onion", " Pumkin", " Peas"];
+
+        for (i = 0; i < veges.length; i++) {
+            var text = veges[i] + '<br>' ;
+            document.write(text);
+
+            document.write("<hr>")
+            document.write(Math.random())
+        } 
+            
+        </script>
+
+        <p>No.3</p>
+         <p id="demo"></p>
+    <script>
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+             case 1:
+                day = "Monday";
+                break;
+             case 2:
+                day = "Tuesday";
+                break;
+             case 3:
+                day = "Wednesday";
+                break;
+             case 4:
+                day = "Thrusday";
+                break;
+             case 5:
+                day = "Friday";
+                break;
+             case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+    </body>
+</html>
