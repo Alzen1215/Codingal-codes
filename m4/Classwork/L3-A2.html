@@ -6,10 +6,18 @@
     <script>
         var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Cherry"];
 
-        for (i = 0; i < fruits.length; i++) {
+        for (i = fruits.length - 1; i >= 0; i--) {
             var text = fruits[i] + '<br>' ;
             document.write(text);
         }
+
+         var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Cherry"];
+         
+         for (var i = 0; i < fruit.length; i += 2) {
+            var text = fruits[i] + '<br>';
+            document.write(text);
+        }
+       
     </script><!--document.write(Math.random())-->
 </body>
 </html>
