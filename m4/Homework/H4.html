@@ -8,7 +8,7 @@
 <body>
     <h2>Welcome to the world of Javascript.</h2>
     <p id="demo3"></p>
-    <p id="resultofsum"></p>
+  
 
     <script>
         var person = {
@@ -41,21 +41,19 @@
 
             var value = Math.tan(0);
             document.write("Value of Tan :" + value + "<br>");
-    
 
-   
-         document.write("<h3>Sum of Data:</h3>")
-
-    
-        function saveUs () {
-            
+           
+         function saveUs () {
             var sum = 0;
-            for (i = 0; i < number.length; i++) {
-                sum += number[i];
+            for (i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
             }
-            document.getElementById("resultofsum").innerHTML = saveUs(2, 8, 9, 1, 24, 39, 51) + sum;
-        }
+        	return sum    
+        }    
+        document.write("<h3>Sum of Data:</h3>"+saveUs(2, 8, 9, 1, 24, 39, 51));
     </script>
+    </script>
+
 
 </body>
 </html>
