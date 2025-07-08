@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Using Javascript.
+        </title>
+    </head>
+<body>
+    <h2>Welcome to the world of Javascript.</h2>
+    <p id="demo3"></p>
+    <p id="resultofsum"></p>
+
+    <script>
+        var person = {
+            firstname: "Alzen",
+            age: 16,
+            grade: 11,
+            school: "CAD"
+        };
+
+        document.getElementById("demo3").innerHTML = "Hello I am " + person.firstname 
+         + " a student from Codingal." + "<br>" + "I am " + person.age + " years old." + "<br>" 
+         + " I am currently studying in grade " + person.grade + " in " + person.school + ".";
+    
+
+    
+            var value = Math.acos(1);
+            document.write("Value of Cos(inverse):" + value + "<br>");
+
+            var value = Math.asin(1);
+            document.write("Value of Sin(inverse):" + value + "<br>");
+
+            var value = Math.atan(1);
+            document.write("Value of Tan(inverse):" + value + "<br>");
+
+            var value = Math.cos(0);
+            document.write("Value of Cos :" + value + "<br>");
+
+            var value = Math.sin(1);
+            document.write("Value of Sin :" + value + "<br>");
+
+            var value = Math.tan(0);
+            document.write("Value of Tan :" + value + "<br>");
+    
+
+   
+         document.write("<h3>Sum of Data:</h3>")
+
+    
+        function saveUs () {
+            
+            var sum = 0;
+            for (i = 0; i < number.length; i++) {
+                sum += number[i];
+            }
+            document.getElementById("resultofsum").innerHTML = saveUs(2, 8, 9, 1, 24, 39, 51) + sum;
+        }
+    </script>
+
+</body>
+</html>

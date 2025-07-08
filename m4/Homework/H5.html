@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Javascript With Array</h2>
+
+    <p id="demo90"></p>
+    <script>
+        var sum = 0;
+        function add3(c,sum) {
+            sum += c;
+            return sum;
+        }
+
+        function add2(b, c, sum) {
+            sum += b;
+            return add3(c, sum);
+        }
+
+        function add1(a, b, c) {
+            sum = a;
+            return add2(b, c,sum);
+
+        }
+        document.getElementById("demo90").innerHTML = ("Sum of the data is :" +add1(10, 20, 30));
+    </script>
+</body>
+</html>
