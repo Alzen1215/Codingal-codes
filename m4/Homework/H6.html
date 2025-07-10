@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admission for Further Studies:</title>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="cssh6.css">
+    </head>
+
+    <body>
+        <h2 id="onee">Welcome to the admission site, </h2>
+        <p id="myp">In this site you can admit yourself in any colleges in the world and apply them.</p>
+
+        <script>
+            var text = document.getElementById("onee").innerHTML;
+            alert(text + "                                                            Disclaimer :" + " This site is only for the students passed in 10th only.");
+
+
+        </script>
+
+        <h1>Appy for any institution/college:</h1><br>
+        <hr>
+        <form id="loginform" onsubmit="validate(event)">
+            <fieldset>
+
+                <div>
+                    <label for="name">Enter full name:</label>
+                    <input type="name" id="name" name="name">
+                </div>
+
+                <div>
+                    <label for="age">Enter appropriate age:</label>
+                    <input type="number" id="age" min="14" max="60">
+                </div>
+
+                <div>
+                    <label for="marks">Enter your marks in 10th.(in percentage)</label>
+                    <input for="number" id="marks" min="0" max="100">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
