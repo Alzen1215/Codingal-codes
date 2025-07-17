@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<body>
+    <h1>Square Numbers:</h1>
+
+        <p id="value34"></p>
+        <button  onclick="ascending()">Ascending Order</button>
+        <button  onclick="descending()">Descending Order</button>
+        <p id="result3.0"></p>
+
+        <script>
+            var numbers = [2, 3, 9, 5, 8, 7, 1, 4];
+            document.getElementById("value34").innerHTML = numbers;
+
+            function myFunction(num) {
+                return num * num;
+            }
+            var array2 = numbers.map(myFunction);
+
+            document.getElementById("value34").innerHTML = array2;
+
+            function ascending() {
+                array2.sort(function (a, b) {return a - b});
+                document.getElementById("result3.0").innerHTML = array2;
+            }
+            function descending() {
+                array2.sort(function (a, b) { return b - a });
+                document.getElementById("result3.0").innerHTML = array2;
+            }
+       </script>
+    
+</body>
