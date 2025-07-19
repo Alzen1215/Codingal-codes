@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h2>Using Static and Inheritance class:</h2>
+        <hr>
+
+        <p id="heulo"></p>
+        <p id="welome"></p>
+        <p id="about"></p>
+
+
+        <script>
+            class Student {
+                contructor(name) {
+                    this.studentname = name;
+                }
+                static heulo() {
+                    return "Hello! User..";
+                }
+                static welcome(x) {
+                    return "Welcome to the world of AI Mr/Mrs " + x.studentname;
+                }
+                abt() {
+                    return "Todays World has changed to AI, Skills is more prioritised than knowledge";
+                }
+
+                
+            }
+            myname = new Student("Alzen");
+             document.getElementById("heulo").innerHTML = Student.heulo();
+             document.getElementById("welcome").innerHTML = myname.welcome();
+             document.getElementById("about").innerHTML = Student.abt();
+        </script>
+    </body>
+</html>
