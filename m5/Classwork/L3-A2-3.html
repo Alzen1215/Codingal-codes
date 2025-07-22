@@ -2,18 +2,28 @@
 <html>
     <body>
         <h2>Click to change array.</h2>
-        <button onclick="myFunction()">Square Numbers</button>
+        <button onclick="multiply()">Multiply by 10</button>
+        <button onclick="sQuare()">Square Numbers</button>
+        <button onclick="multiplyby2()">Multiply by 2</button>
+      
+
         <p id="result2"></p>
         <script>
             var numbers = [28, 16, 6, 19, 2, 95];
-
-            function myFunction(num) {
-                return num * num;
+            document.getElementById("result2").innerHTML = numbers;
+            var array
+            function multiply() {
+                var array = numbers.map (function (num){return num ** 10;});
+                document.getElementById("result2").innerHTML = array;
+            } 
+            function sQuare() {
+                var array = number.map (function (num){return num * num;});
+                document.getElementById("result2").innerHTML = array;
             }
-            
-            var array2 = numbers.map(myFunction);
-            document.getElementById("result2").innerHTML = array2;
-
+            function multiplyby2() {
+                var array = number.map (function (num){return num * 2;});
+                document.getElementById("result2").innnerHTML = array;
+            }
 
            
         </script>
