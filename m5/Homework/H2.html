@@ -12,7 +12,7 @@
 
         <script>
             class Student {
-                contructor(name) {
+                constructor(name) {
                     this.studentname = name;
                 }
                 static heulo() {
@@ -27,9 +27,9 @@
 
                 
             }
-            myname = new Student("Alzen");
+             const myname = new Student("Alzen");
              document.getElementById("heulo").innerHTML = Student.heulo();
-             document.getElementById("welcome").innerHTML = Student.welcome();
+             document.getElementById("welcome").innerHTML = Student.welcome(myname);
              document.getElementById("about").innerHTML = myname.abt();
         </script>
     </body>
