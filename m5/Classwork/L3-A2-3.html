@@ -5,6 +5,8 @@
         <button onclick="multiply()">Multiply by 10</button>
         <button onclick="sQuare()">Square Numbers</button>
         <button onclick="multiplyby2()">Multiply by 2</button>
+        <button onclick="ascending()">Ascending Order</button>
+        <button onclick="descending()">Descending order</button>
       
 
         <p id="result2"></p>
@@ -13,16 +15,26 @@
             document.getElementById("result2").innerHTML = numbers;
             var array
             function multiply() {
-                var array = numbers.map (function (num){return num ** 10;});
+                var array = numbers.map (function (num){return num * 10;});
                 document.getElementById("result2").innerHTML = array;
             } 
-            function sQuare() {
-                var array = number.map (function (num){return num * num;});
-                document.getElementById("result2").innerHTML = array;
+             function ascending() {
+                numbers.sort(function (a, b) {return a - b});
+                document.getElementById("result").innerHTML = points;
             }
+            function descending() {
+                numbers.sort(function (a, b) { return b - a });
+                document.getElementById("result").innerHTML = points;
+            }
+
             function multiplyby2() {
                 var array = number.map (function (num){return num * 2;});
                 document.getElementById("result2").innnerHTML = array;
+            }
+
+            function reset() {
+                var array = numbers.slice();
+                document.getElementById 
             }
 
            
