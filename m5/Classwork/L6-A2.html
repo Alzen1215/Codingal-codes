@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            function validateform() {
-                var x = document.forms["myform"]["fname"].value;
-                if (x == "") {
-                    alert("Name must be filled out");
-                    return false;
-                }
-                else document.write(x +"name submitted");
-            }
-        </script>
-    </head>
 
-    <body>
-        <form name="myform" onsubmit="validateform()">
-            <label>Name : </label>
-            <input type="text" name="fname">
-            <input type="submit">
-        </form>
-    </body>
+<body>
+    <p>Enter a number and click OK!</p>
+    <input id="id2" type="number" min="100" max="300" required>
+
+    <button onclick="myFunction()"> OK</button>
+
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+    <p id="result"></p>
+
+    <script>
+        function myFunction() {
+            var inpObj = document.getElementById("id2");
+            if (!inpObj.checkValidity()) {
+                document.getElementById("result").innerHTML = inpObj.validationMessage;
+            } else {
+                document.getElementById("result").innerHTML = "Input OK";
+            }
+        }
+    </script>
+</body>
 </html>
