@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
     <body>
-        
+        <h2>JavaScript Error Handlier:</h2>
+
+        <p id="error"></p>
+
+        <script>
+            try {
+                var num = 55;
+                num.toLowerCase();
+                document.getElementById("error").innerHTML = "No Error.";
+            }
+            catch (err) {
+                document.getElementById("error").innerHTML = err.message;
+            }
+        </script>
     </body>
 </html>
