@@ -1,0 +1,16 @@
+body {
+    background: black;
+    font-family: "Baloo Tamma 2", cursive;
+    scroll-behavior: smooth;
+}
+
+.navigation-link {
+    border: 2px solid transparent;
+
+}
+
+.navigation-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid darkorange;
+    transition: 0.5s ease;
+}
