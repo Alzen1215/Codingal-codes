@@ -1,0 +1,20 @@
+body {
+    background: black;
+    font-family: "Baloo Tamma 2", cursive;
+    scroll-behavior: smooth;
+}
+
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('OIP.webp');
+    background-attachment: fixed;
+    background-size: cover;
+}
