@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 340</title>
+</head>
+
+<body>
+    <h3>JavaScript Await prj</h3>
+    <h4>The difference of 85 and 25 is :</h4>
+    <p id="result6"></p><br>
+    <hr>
+    <h4>The sum of 34 and 26 is :</h4>
+    <p id="result7"></p>
+
+    <script>
+        async function subtract(c,d) {
+            let response = await (c - d);
+            display(response);
+        }
+        function display (c) {
+            document.getElementById("result6").innerHTML = c;
+        }
+        subtract(85,25);
+
+        async function add(a,b) {
+            let response = await (a + b);
+            display(response);
+        }
+        function display (a) {
+            document.getElementById("result7").innerHTML = a;
+        }
+        add(39,26);
+    </script>
+</body>
+</html>
