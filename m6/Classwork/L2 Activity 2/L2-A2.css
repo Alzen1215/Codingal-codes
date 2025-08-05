@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: gray;
+    font-family: "Baloo Tamma 2", cursive;
+}
